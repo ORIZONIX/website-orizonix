@@ -1,104 +1,62 @@
-<!-- TEMPLATE 1 : ARTISAN / COMMERÇANT LOCAL (créole + français) -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[Nom de l'artisan] - Services à La Réunion</title>
-  <style>
-    body { font-family: sans-serif; padding: 2em; background: #f5f5f5; color: #333; }
-    header { text-align: center; }
-    .bilingue { font-style: italic; color: #666; }
-    .cta { display: block; margin-top: 1em; background: #008080; color: white; padding: 1em; text-align: center; text-decoration: none; border-radius: 5px; }
-    section { margin-top: 2em; }
-  </style>
+  <title>ORIZONIX</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>[Nom de l'artisan]</h1>
-    <p class="bilingue">Services de qualité à La Réunion / Sèrviss la kour ek zefikas</p>
+    <h1>ORIZONIX</h1>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Mon Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section>
-    <h2>Nos services / Nou bann sèrviss</h2>
+  <section id="hero">
+    <h2>Développeur créatif et passionné</h2>
+    <p>Des solutions numériques simples, utiles et efficaces, à portée de clic.</p>
+    <a href="#contact" class="btn">Discutons ensemble</a>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
     <ul>
-      <li>Plomberie, électricité, peinture...</li>
-      <li>Intervention rapide toute l'île</li>
+      <li>Création de landing pages modernes</li>
+      <li>Sites vitrines pour petites entreprises</li>
+      <li>Prototypage de systèmes embarqués (ex: ESP32)</li>
+      <li>Optimisation d’interface utilisateur</li>
     </ul>
   </section>
 
-  <section>
-    <h2>Contact rapide</h2>
-    <p>Téléphone : 0692 00 00 00</p>
-    <p>Email : artisan@example.com</p>
-    <a class="cta" href="tel:0692000000">Appel direct / Soné a moin</a>
-  </section>
-</body>
-</html>
-
-<!-- TEMPLATE 2 : LOCATION TOURISTIQUE / GÎTE -->
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[Nom du Gîte] - Hébergement à La Réunion</title>
-  <style>
-    body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding: 0; }
-    header { background: url('photo-gite.jpg') center/cover no-repeat; padding: 4em 1em; color: white; text-align: center; }
-    section { padding: 2em; }
-    .btn { background: #1b5e20; color: white; padding: 1em; border-radius: 5px; display: inline-block; text-decoration: none; }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>[Nom du Gîte]</h1>
-    <p>Location idéale pour vos vacances à La Réunion</p>
-  </header>
-
-  <section>
-    <h2>À propos</h2>
-    <p>Notre gîte vous accueille avec tout le confort moderne, une vue imprenable sur la mer ou les montagnes, à quelques minutes de [ville].</p>
+  <section id="portfolio">
+    <h2>Mon Portfolio</h2>
+    <p><a href="portfolio.html">Voir mes projets →</a></p>
   </section>
 
-  <section>
-    <h2>Réserver maintenant</h2>
-    <p>Contact : 0692 00 00 00 / mail@example.com</p>
-    <a class="btn" href="mailto:mail@example.com">Demander une dispo</a>
-  </section>
-</body>
-</html>
-
-<!-- TEMPLATE 3 : AUTO-ENTREPRENEUR / COACH / ARTISTE -->
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[Nom de la personne] - [Profession]</title>
-  <style>
-    body { font-family: 'Segoe UI', sans-serif; padding: 2em; background: #fefefe; color: #222; }
-    header { text-align: center; }
-    .highlight { color: #e91e63; font-weight: bold; }
-    .cta { background: #e91e63; color: white; padding: 1em; display: inline-block; margin-top: 1em; text-decoration: none; border-radius: 8px; }
-    section { margin-top: 2em; }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>[Nom Prénom]</h1>
-    <p class="highlight">Coach / Musicien / Créateur numérique</p>
-  </header>
-
-  <section>
-    <h2>Ce que je propose</h2>
-    <p>Je vous accompagne pour [objectif spécifique]. Je propose des sessions personnalisées, des contenus exclusifs et un suivi régulier.</p>
-  </section>
-
-  <section>
+  <section id="contact">
     <h2>Contact</h2>
-    <p>Email : contact@example.com</p>
-    <a class="cta" href="mailto:contact@example.com">Travaillons ensemble !</a>
+    <form action="#" method="post">
+      <label for="name">Nom</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
   </section>
+
+  <footer>
+    <p>&copy; 2025 ORIZONIX. Tous droits réservés.</p>
+  </footer>
 </body>
 </html>
